@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+header {
+font-family: Chiller;
+background: brown;
+color: white;
+font-size: 2em;
+padding: 20px;
+letter-spacing: 6px;
+text-align: center;
+}
+h2 {
+font-size: 2em;
+text-align: center;
+}
+table { 
+width: 1333px;
+}
+footer {
+font-size: 1.9em;
+}
+button{
+background-color: brown;
+border: 1px;
+color: white;
+border-radius: 20px;
+font-size: 3em;
+padding: 10px;
+width: 90%;
+margin-bottom: 10px;
+font-family: Chiller;
+}
+		
+.icons: hover{
+box-shadow: 6px 10px 2px yellow;
+}
+		 
+input {
+width: 200px;
+}
+a {
+font-size: 50px;
+color: brown; 
+font-family: Chiller;
+}
+		@media screen and (min-width: 50em){
+		.card{
+		border: 1px solid #ccc;
+		background-color: brown;
+		margin: 25px;
+		padding: 25px;
+		flex-basis: 325px;
+		box-shadow: 6px 6px 10px royalblue;
+		color: white;
+		}
+		}
+		.icons{
+		font-size: 8em;
+		padding: 25px;
+		}
+		button, .button{
+		background-color: royalblue;
+		border: 1px;
+		color: white;
+		border-radius: 20px;
+		font-size: 1em;
+		padding: 10px;
+		width: 100%;
+		margin-bottom: 10px;
+		}
+		.button: hover{
+		box-shadow: 6px 10px 2px yellow;
+		}
+		 
+		.container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        }
+       .blue{
+        background-color: teal;
+        }
+		table{
+		width:100%;
+		background-color: yellow;
+		margin: auto;
+		}
+		td{
+		padding: 10px;
+		}
+       #my-order{
+	background-color: royalblue;
+		border: 1px;
+		color: white;
+		border-radius: 20px;
+		font-size: 3em;
+		padding: 10px;
+		width: 100%;
+		margin-bottom: 10px;
+	   }
+	mark{
+background: royalblue;
+}	
+        
+</style>
+<head>
+<body>
+<header>
+<h1> FurBalls </h1>
+<h4> Your best furry friend is await! </h4> 
+</header>
+<section>
+<mark>
+<table border="1">
+<tr>
+  <td><a href='FurBalls.html' >Main Page</a></td>
+  <td><a href='BunnyPage.html' >Bunny Guide</a></td>
+  <td><a href='CatPage.html' >Cat Guide</a></td>
+  <td><a href='Shop.html' >Shop</a></td>
+</tr>
+</table>
+</mark>
+<p><strong><mark> Note: More guides coming soon... We only work with cats and bunnies for now, sorry for the inconvice! </mark></strong></p>
+<h2> Welcome to FurBalls Pet Shop </h2>
+<section>
+<pre>
+<article class="card">
+<div id:"my-order">
+Your order was succesfully sent, please fill this form to complete your order!
+<form>
+<ul>
+<li> Fullname: <input type="text" Value="Example: Mariam Ahmed Elsayed Elnaghi"> </input> </li>
+<li> Phone Number: <input type="text" Value="Phone Number"> </input> </li>
+<li> Email: <input type="text" Value="someone.example@gmail.com"> </input> </li>
+<li> Adress: <input type="text" Value="Adress"> </input> </li>
+</ul>
+
+After filling this form please be 
+sure to keep alert of any message 
+you get from our company.
+
+
+<div id="my-order">
+<form>
+<input class="button" type="button" value="Submit" onclick="placeOrder();">
+
+</div>
+</form>
+</form>
+</div>
+</article>
+</pre>
+</section>
+<footer>
+Thanks for visiting FurBalls!! &#128513;
+<br> If you find any stray or feral animal, please call +974 7024 5996 for 10 dollars, and 100 dollars for catching it.
+<br>&copy Please talk to this number for Copyrights &#128071;&#10084;
+<br> +974 70245996
+<br> For any comments bugs or problems please don't hesitate to contact email below: 
+<br> maryomaelnaghi@gmail.com 
+<br> Enjoy the Furballs' service!!! 
+</footer>
+<script>
+		function placeOrder()
+		{
+		results = "<h3> Success!</h3> Your order was sent an will arrive in 2 days, <br> if not contact +974 70245996.";
+		var orderResults= document.getElementById("my-order");
+		orderResults.innerHTML= results;
+		}
+</script>
+</body>
+</html>
